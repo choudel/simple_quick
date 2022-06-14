@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
           secondary: Colors.blueGrey,
         ),
       ),
-      home: const MyHomePage(title: 'Quick & Easy'),
+      home: const MyHomePage(),
     );
   }
 }

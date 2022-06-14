@@ -1,14 +1,7 @@
 import 'package:flutter/material.dart';
 
-class CounterComponent extends StatefulWidget {
+class CounterComponent extends StatelessWidget {
   const CounterComponent({Key? key}) : super(key: key);
-
-  @override
-  State<StatefulWidget> createState() => _CounterComponent();
-}
-
-class _CounterComponent extends State<CounterComponent> {
-  final int _counter = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -25,15 +18,21 @@ class _CounterComponent extends State<CounterComponent> {
               Container(
                 height: 50,
                 color: Colors.amber[600],
-                child: const Text(
-                  'You have pushed the button this many times:',
+                child: const Center(
+                  child: Text(
+                    'This App is a live Robbery Simulator with concrete consquences',
+                  ),
                 ),
               ),
               Container(
                 height: 50,
                 color: Colors.amber[100],
-                child: Center(
-                  child: Text('$_counter'),
+                child: const Center(
+                  child: Text(
+                      style: TextStyle(
+                        color: Colors.black87,
+                      ),
+                      'GIVE SOMETHING'),
                 ),
               ),
             ],
