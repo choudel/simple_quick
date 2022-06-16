@@ -1,9 +1,11 @@
 import 'package:flutter/services.dart';
+import 'package:injectable/injectable.dart';
 import 'package:simple_quick/domain/auth/auth_value_objects.dart';
 import 'package:simple_quick/domain/auth/auth_failure.dart';
 import 'package:dartz/dartz.dart';
 import 'package:simple_quick/domain/auth/i_auth_facade.dart';
 
+@LazySingleton(as: IAuthFacade)
 class DatabaseAuthFacade implements IAuthFacade {
   final DatabaseAuth _databaseAuth;
 
