@@ -1,6 +1,5 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
-import 'package:simple_quick/presentation/components/counter.dart';
+import 'package:simple_quick/presentation/components/sign_in_form.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({Key? key}) : super(key: key);
@@ -10,11 +9,11 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         titleTextStyle: const TextStyle(fontWeight: FontWeight.bold),
-        title: const Center(child: Text('HELLLLO')),
+        title: const Center(
+          child: Text('Sign In'),
+        ),
       ),
-      body: const Center(
-        child: CounterComponent(),
-      ),
+      body: const SignInForm(),
     );
   }
 }

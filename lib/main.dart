@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
-import 'presentation/home_page.dart';
 
-void main() {
+import 'package:simple_quick/presentation/home_page.dart';
+
+import 'objectbox.g.dart';
+
+Future<void> main() async {
+  final store = openStore();
   runApp(const MyApp());
 }
 
